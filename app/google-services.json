@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634094484876",
+    "project_id": "ice-cream-parlor-9b6d6",
+    "storage_bucket": "ice-cream-parlor-9b6d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634094484876:android:1e746bfa6dc1136b376aa9",
+        "android_client_info": {
+          "package_name": "com.example.coolhouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ8VO6JSLgWlKvxTKT0KFdkPyqFPsHZe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
