@@ -13,24 +13,30 @@
         android:theme="@style/Theme.CoolHouse"
         tools:targetApi="31">
         <activity
+            android:name=".Product_Details"
+            android:exported="false" />
+        <activity
             android:name=".register"
-            android:exported="false" >
-<!--            <intent-filter>-->
+            android:exported="false">
 
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+
+
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home_page"
+        <activity
+            android:name=".Home_page"
             android:exported="false">
+
             <!-- Any additional attributes for the activity -->
         </activity>
     </application>

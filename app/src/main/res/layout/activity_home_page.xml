@@ -111,35 +111,43 @@
                         android:scaleType="centerCrop"
                         android:background="@color/black"
                         app:shapeAppearanceOverlay="@style/circular"/>
+
+                    <FrameLayout
+                        android:id="@+id/flFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp">
+
+
+                    </FrameLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="338dp"
+            android:layout_height="604dp"
+            android:layout_margin="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/gray"
+            android:elevation="20dp"
             android:orientation="vertical"
             android:padding="20dp"
-            android:elevation="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Linearlayout1"
             app:layout_constraintVertical_bias="0.0"
-            app:background="@drawable/menucard_bg"
-           >
+            app:shapeAppearanceOverlay="@style/circular">
 
             <TextView
                 android:id="@+id/menucard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="-----** Menu Card **-----"
-                android:textSize="30sp"
                 android:gravity="center"
+                android:text="-----** Menu Card **-----"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ScrollView
@@ -154,33 +162,34 @@
                     android:padding="10dp">
 
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/kulfi"
-                            android:layout_width="100dp"
-                            android:layout_height="70dp"
-                            android:layout_gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
                             android:layout_marginRight="10dp"
-                            android:scaleType="centerCrop"
-                            android:background="@drawable/kulfi"/>
+
+                            android:background="@drawable/kulfi"
+                            android:gravity="center"
+                            android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview1"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
+                            android:gravity="center"
                             android:text="KULFI"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -188,191 +197,199 @@
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginVertical="8dp"
-                        android:background="@color/gray"
                         android:layout_marginTop="2dp"
-                        android:layout_marginBottom="2dp"/>
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/gray" />
 
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/cornato"
-                            android:layout_width="100dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
                             android:layout_gravity="center"
+
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
                             android:background="@drawable/cornato"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview2"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="30dp"
+                            android:gravity="center"
                             android:text="CORNATO"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginVertical="8dp"
-                        android:background="@color/gray"
                         android:layout_marginTop="2dp"
-                        android:layout_marginBottom="2dp"/>
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/gray" />
+
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/chocobar"
-                            android:layout_width="100dp"
-                            android:layout_height="70dp"
-                            android:layout_marginLeft="20dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
                             android:layout_gravity="center"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+
                             android:layout_marginRight="10dp"
                             android:background="@drawable/chocobar"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview3"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="30dp"
+                            android:gravity="center"
                             android:text="CHOCOBAR"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginVertical="8dp"
-                        android:background="@color/gray"
                         android:layout_marginTop="2dp"
-                        android:layout_marginBottom="2dp"/>
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/gray" />
+
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/lassi"
-                            android:layout_width="100dp"
-                            android:layout_height="70dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
+
                             android:layout_marginRight="10dp"
                             android:background="@drawable/lassi"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview4"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="30dp"
+                            android:gravity="center"
                             android:text="LASSI"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginVertical="8dp"
-                        android:background="@color/gray"
                         android:layout_marginTop="2dp"
-                        android:layout_marginBottom="2dp"/>
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/gray" />
+
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/familypack"
-                            android:layout_width="100dp"
-                            android:layout_height="70dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
+
                             android:layout_marginRight="10dp"
                             android:background="@drawable/familypack"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview5"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="30dp"
+                            android:gravity="center"
                             android:text="FAMILY PACK ICE-Cream"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
                         android:orientation="horizontal">
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/colddrink"
-                            android:layout_width="100dp"
-                            android:layout_height="70dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
                             android:layout_gravity="center"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
+
                             android:layout_marginRight="10dp"
                             android:background="@drawable/drinks"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview6"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="30dp"
+                            android:gravity="center"
                             android:text="COLD DRINKS"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginVertical="8dp"
-                        android:background="@color/gray"
                         android:layout_marginTop="2dp"
-                        android:layout_marginBottom="2dp"/>
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/gray" />
+
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
                         android:orientation="horizontal">
@@ -381,35 +398,37 @@
                             android:id="@+id/cupicecream"
                             android:layout_width="100dp"
                             android:layout_height="80dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
                             android:layout_gravity="center"
+
+                            android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/cupicecream"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview7"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="30dp"
+                            android:gravity="center"
                             android:text="CUP ICE-Cream"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginVertical="8dp"
-                        android:background="@color/gray"
                         android:layout_marginTop="2dp"
-                        android:layout_marginBottom="2dp"/>
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/gray" />
+
                     <LinearLayout
-                        android:layout_width="350dp"
-                        android:layout_height="80dp"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="0dp"
                         android:orientation="horizontal">
@@ -418,23 +437,23 @@
                             android:id="@+id/cake"
                             android:layout_width="100dp"
                             android:layout_height="80dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
                             android:layout_gravity="center"
+
+                            android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/lassi"
                             android:scaleType="centerCrop" />
 
                         <TextView
                             android:id="@+id/textview8"
-                            android:layout_width="170dp"
-                            android:layout_height="60dp"
-                            android:gravity="center"
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center|right"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="30dp"
+                            android:gravity="center"
                             android:text="CAKES"
-                            android:textSize="20dp"
+                            android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -443,20 +462,6 @@
             </ScrollView>
 
         </LinearLayout>
-
-        <FrameLayout
-            android:id="@+id/flFragment"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-
-
-        </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
