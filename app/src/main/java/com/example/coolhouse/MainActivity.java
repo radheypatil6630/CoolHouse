@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +14,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText Textemail, Textpassword;
+    EditText Textemail, Textpassword ;
+    TextView registerbtn;
     Button login;
     FirebaseAuth mAuth;
 
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Textemail = findViewById(R.id.Email);
         Textpassword = findViewById(R.id.Password);
         login = findViewById(R.id.Login);
-
+        registerbtn = findViewById(R.id.registerbtnlogin);
 
         //username=jaydeep@gmail.com
         //password=123456
@@ -57,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
                         });
 
             }
+        });
+        registerbtn.setOnClickListener(view -> {
+            Intent stm = new Intent(MainActivity.this, register.class);
+            startActivity(stm);
         });
 
     }
